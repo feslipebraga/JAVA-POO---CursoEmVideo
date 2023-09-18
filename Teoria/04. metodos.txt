@@ -1,0 +1,69 @@
+Metodos Acessores (Getters)
+
+# acesso direto a estante com documentos
+e = nova Estante
+t = e.totDoc
+
+# mais seguro, solicita ao metodo e o metodo retorna o desejado
+# me retorne todos os meus documentos
+e = nova Estante
+t = e.getTotDoc()
+
+
+
+Metodos Modificadores (Setters)
+
+e = nova Estante
+e.totDoc = e.totDoc + 1
+
+# guarde esse(s) documento(s)
+e = nova Estante 
+e.setTotDoc(doc)
+
+
+
+Classe Caneta
+	public string modelo;
+	private float ponta;
+
+	public getModelo(){
+		return this.modelo
+	};
+	public setModelo(string m){
+		this.modelo = m
+	};
+	public getPonta(){
+		return this.ponta
+	};
+	public setPonta(float p){
+		this.ponta = p
+	};
+}
+
+Caneta c1 = new Caneta();
+C1.setModelo("BIC Cristal")
+C1.setPonta(0.5f)
+print(c1.getModelo());
+print(c1.getPonta());
+
+
+
+Metodo Construtor (construct)
+# cria objetos com configurações pré-definidas.
+
+Classe Caneta(){
+	void construtor(string m, string c, float p){
+		setModelo(m);
+		setCor(c);
+		setPonta(p);
+		tampar();
+	}
+}
+
+
+Caneta c1 = new Caneta("BIC", "Azul", 0.5f);
+
+
+
+
+
